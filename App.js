@@ -6,11 +6,13 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Counter from './src/component/counter';
+import AgeValidation from './src/component/ageValidation';
 
 const App = () => {
   return (
-    <View style={{flex:1}}>
-      <Counter />
+    <View style={{flex: 1}}>
+      {/* <Counter /> */}
+      <AgeValidation />
     </View>
   );
 };
