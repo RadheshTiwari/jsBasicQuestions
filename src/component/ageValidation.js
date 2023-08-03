@@ -17,9 +17,7 @@ const AgeValidation = () => {
   //console.log('age', age);
   const calCulation = () => {
     if (age === null || age === undefined || age === '') {
-      
-        Alert.alert('please fill the form');
-      
+      Alert.alert('please fill the form');
     } else {
       if (weight === null || weight === undefined || weight === '') {
         Alert.alert('fill the form');
@@ -28,16 +26,30 @@ const AgeValidation = () => {
 
     if (age >= 5 && age <= 7) {
       if (weight >= 15 && weight <= 20) {
-        console.log('you are fit 1');
+        console.log("yo're fit1");
+      } else {
+        console.log('not fit1');
+      }
+    } else if (age >= 8 && age <= 10) {
+      if (weight >= 21 && weight <= 25) {
+        console.log("you're fit2");
+      } else {
+        console.log('not fit 2');
+      }
+    } else if (age >= 11 && age <= 15) {
+      if (weight >= 26 && weight <= 30) {
+        console.log("you're fit3");
+      } else {
+        console.log('not fit 3');
+      }
+    } else if (age >= 16 && age <= 20) {
+      if (weight >= 31 && weight <= 40) {
+        console.log("you're fit4");
+      } else {
+        console.log('not fit 4');
       }
     } else {
-      if (age >= 8 && age <= 10) {
-        if (weight >= 21 && weight <= 25) {
-          console.log('you are fit 2');
-        }
-      } else {
-        console.log('you are not fit');
-      }
+      console.log('you are not fit');
     }
   };
   return (
